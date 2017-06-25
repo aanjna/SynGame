@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html ng-app="dms">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>games</title>
+
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600'
+	rel='stylesheet' type='text/css'>
+<link href="vendor/progressbar/loading-bar.css" rel='stylesheet'
+	type='text/css'>
+<link rel="stylesheet" href="vendor/tag-inputs/ng-tags-input.min.css" />
+
+<!-- Vendor cascading style sheet start -->
+<link rel="stylesheet" href="vendor/font-awesome/font-awesome.min.css">
+<link rel="stylesheet" type="text/css"
+	href="vendor/bootstrap/bootstrap.min.css" />
+
+<link rel="stylesheet" href="vendor/angular-dashboard/angular-chart.css">
+<link rel="stylesheet"
+	href="vendor/jquery-datatable/dataTables.bootstrap4.min.css">
+<!-- <link rel="stylesheet" href="vendor/jquery-datatable/responsive.dataTables.min.css"> -->
+<link rel="stylesheet"
+	href="vendor/multilevelpushmenu/jquery.multilevelpushmenu.css">
+<link rel="stylesheet"
+	href="vendor/angular-select-multiple/isteven-multi-select.css">
+<link rel="stylesheet" href="vendor/fullcalendar/fullcalendar.css">
+<!-- Vendor cascading style sheet end -->
+
+<!-- Vendor java-script files start -->
+
+<script src="vendor/jquery/jquery-1.11.2.min.js"></script>
+<script src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="vendor/jquery-datatable/jquery.dataTables.min.js"></script>
+<script src="vendor/jquery-datatable/dataTables.bootstrap4.min.js"></script>
+<!-- <script src="vendor/jquery-datatable/dataTables.responsive.min.js"></script> -->
+<script src="vendor/angular/angular.min.js"></script>
+<script src="vendor/breadcrumb/uiBreadcrumbs.js"></script>
+<script src="vendor/angular-ui/angular-ui-router.js"></script>
+<script src="vendor/angular-datatable/angular-datatables.min.js"></script>
+<!-- <script src="vendor/angular-datatable/jquery.datatables.sorting-plugins.min.js"></script> -->
+<script src="vendor/ui-bootstrap/ui-bootstrap-tpls-0.14.3.min.js"></script>
+<script src="vendor/angular-dashboard/Chart.min.js"></script>
+<script src="vendor/angular-dashboard/angular-chart.js"></script>
+<script src="vendor/angular-dashboard/angular-chart.min.js"></script>
+<script src="vendor/ng-file-upload/ng-file-upload.js"></script>
+<script src="vendor/multilevelpushmenu/jquery.multilevelpushmenu.min.js"></script>
+<script src="vendor/multilevelpushmenu/modernizr.min.js"></script>
+<script src="vendor/angular-resource/angular-resource.min.js"></script>
+<script src="vendor/angular-storage/ngStorage.min.js"></script>
+<script src="vendor/progressbar/loading-bar.js"></script>
+<script src="vendor/angular/angular-animate.js"></script>
+<script src="vendor/ui-date/date.js"></script>
+<script src="vendor/tag-inputs/ng-tags-input.min.js"></script>
+<script src="vendor/angular-confirm/angular-confirm.js"></script>
+<script src="vendor/angular-confirm/angular-base64.js"></script>
+<script src="vendor/ng-file-upload/angular-base64-upload.js"></script>
+<script src="vendor/angular-select-multiple/isteven-multi-select.js"></script>
+<script src="vendor/ui-calendar/calendar.js"></script>
+<script src="vendor/moment/moment.min.js"></script>
+<script src="vendor/fullcalendar/fullcalendar.js"></script>
+<script src="vendor/fullcalendar/gcal.js"></script>
+<script src="vendor/angucomplete/angucomplete-alt.min.js"></script>
+
+<script src="app/app.js"></script>
+
+<!-- Application file end -->
+<script src="app/login/config/loginConfig.js"></script>
+<script src="app/login/controllers/loginCtrl.js"></script>
+
+<script src="app/syngame/config/syngame-config.js"></script>
+<script src="app/syngame/controllers/syngame-ctrl.js"></script>
+
+<!-- receipt configuration ends -->
+
+<style>
+.linkDisabled {
+	cursor: not-allowed;
+	pointer-events: none;
+}
+</style>
+</head>
+<body>
+	<div class="col-md-12">
+		<div class="col-md-8" align="left" style="margin-top: 20PX;">
+			<a class="" href="/#" ng-disabled="true" title="Go to homepage"
+				data-ui-sref="loggedIn ? mainview : ''"> <img
+				src="images/synchrony-logo.png"
+				style='width: 120px; margin-left: 0px; display: inline-block'
+				class="qfix" /></a>
+		</div>
+
+		<div class="col-md-4" align="right" style="margin-top: 20PX;">
+			<div class=" navbar-right" >
+				<button class="logout" class="btn btn-primary"
+					style="margin-right: 0PX; margin-top: 10px;" 
+					data-ui-sref="login.logout" ng-show="login">Logout</button>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<div class="col-md-12">
+		<div class="" style="margin-top: 20PX;">
+			<div id="pushobj"
+				class="col-xs-12 col-md-offset-0 col-md-12 main-block">
+				<div data-ui-view></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

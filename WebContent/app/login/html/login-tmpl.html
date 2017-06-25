@@ -1,0 +1,51 @@
+
+<div>
+
+	<div class=" col-md-offset-4 col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-heading login-heading">
+				<center>Login</center>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-12">
+						<form name="loginDetail" class="container-fluid" action="#"
+							novalidate>
+							<p>
+								<font color='RED'>
+									<h5>{{message}}</h5>
+								</font>
+							</p>
+							<div class="form-group">
+								<label for="exampleInputEmail1">User Name</label> <input
+									type="text" class="form-control" name="username"
+									ng-keyup="loginDetail.$valid && $event.keyCode == 13 && save()"
+									ng-model="login.username" placeholder="Username"
+									ng-required="true" autofocus />
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1"> Password</label> <input
+									type="password" class="form-control" name="password"
+									ng-keyup="loginDetail.$valid && $event.keyCode == 13 && save()"
+									ng-model="login.password" placeholder="Password"
+									ng-required="true" />
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<p class="submit">
+										<input type="button" class="btn btn-orange pull-left"
+											name="commit" ng-click="save()"
+											ng-disabled="loginDetail.$invalid" value="Submit">
+									</p>
+								</div>
+
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
